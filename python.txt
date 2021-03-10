@@ -1,0 +1,23 @@
+1. int 
+2. float 
+3. complex 
+4. None 
+5. bool   True/False 
+6. list  []  // mutable list.add/delete/clear/change
+7. tuple() // immutable // i cannot do (Read)
+8. set  {}  // non duplicate values 
+9. dict { 'key' :'val' }   key = value pair 
+10. byte 
+
+a = 10 
+a  = 20.0 
+a = None 
+a = True | False 
+a = [1, 2,3,4,5]  // list 
+a = (1,2,3,4,5)  //tuple (you cannot add or remove 
+a = {1,2,3,4,5,5,5} // set that will not allow duplicates 
+a = {'user' : 'pasword' } // named maps/ or dict 
+
+
+
+
