@@ -1,0 +1,352 @@
+1. Python is scripted language :- 
+2. Python is interpreted 
+3. Python everything is a variable ..... 
+4. Python is dynamically typed language 
+	a = int 
+	a = float 
+	a = string 
+  	a = boolean 
+	a = object 
+	type identification is at run time 
+5. python + flask (Rest Api / Microservice) 
+6. python django (Web Appliction ) 
+7. python tkinter (Thick System Applications) 
+8. python + bigdata + visual superset --> BI Tool 
+9. Python + Numpy -->  A large number management system 
+10. python + pandas --> a large data anlytics/etl management 
+11. Python is indented : no curly braces no semicolons required 
+12. a new  new line a new line no need terminate ; 
+eg. 
+	if  a > 10: 
+    	    print("xxxx") 
+13.    globals --> 
+14.    python have libraries --> nuget/maven/  (PyPi) python page index 
+15.    Why is python popular 
+	a)  Automation 
+	b)  Big Data ---> 
+	c)  Cloud --> 
+	d)  Products -->
+16.   Python and the source code ---> Binary obsufcate 
+	my code is alway in the open (OPen open Open Source) 
+
+17. Down sides ? 
+	a)  MemoryManagement 
+	b)  Speed 
+	c)  Runtime errors (Testing has to be stronger) 
+	d)  tools 
+-----------------------------------------------------------------------------------------------------------------------------------
+python : base python 3.x (Interpreter and ++ The built in libraries)
+			++ PyPI Community Libraries 
+python --> Flask / Django 
+python --> pandas, scipy 
+python --> matplotlib
+python --> mllib
+
+a) DataTypes 
+b) Constructs 
+c) COllection types 
+d) Loops Logics 
+e) Flow Control and Exception handling 
+f) Package and modules 
+g) Testing and application bundling 
+h) Builtins 
+j)  Using of pypi and virtual env 
+k) Functions 
+l)  Classes / Methods / Objects / Inheritence 
+m)  using of python for websrapping 
+n)  using of python for scripting and testing 
+....... 
+
+18.  REPL :   
+	Read 
+	Eval 
+	Print 
+	Loop 
+
+When we REPL ->  
+CLI _-> Program in command line mode 
+
+
+
+snake_case 
+anaconda 
+
+get_me_my_profits 
+
+
+1)  REPL  (Is volatile) 
+2)  .py File (is a python file program) 
+3)  python 
+4)  python  3.x 
+5)  python  is dynamically typed 
+	a = int 
+	a = float 
+	a = is anything 
+6)  python is indented (python does not have braces, termination ; ) 
+7)  python is interpreted (no compilation) 
+8)  python run natively with os and is not like virtual environment for the java ....
+9)  python is casesensitive 
+10) python  can be install on windows / unix / linux/ mac  most of the operating system sd
+11) Python pycharm , vscode , any text editor can be used to program for python 
+
+Python Data Types 
+	
+	int 
+	float 
+	complex 
+	bool 
+	str 
+	bytes 
+	list [1,2,3,4,5]
+	tuples (1,2,3,4,5)
+	set { 1,23,3,4,5} / no duplicates
+ 	dict  // { 'username': 'nilesh', 'password' : 'abcd' } // key = value
+	range   (1.... 1000) 
+
+
+
+
+
+
+
+
+
+1. int 
+2. float 
+3. complex 
+4. None 
+5. bool   True/False 
+6. list  []  // mutable list.add/delete/clear/change
+7. tuple() // immutable // i cannot do (Read)
+8. set  {}  // non duplicate values 
+9. dict { 'key' :'val' }   key = value pair 
+10. byte 
+
+a = 10 
+a  = 20.0 
+a = None 
+a = True | False 
+a = [1, 2,3,4,5]  // list 
+a = (1,2,3,4,5)  //tuple (you cannot add or remove 
+a = {1,2,3,4,5,5,5} // set that will not allow duplicates 
+a = {'user' : 'pasword' } // named maps/ or dict 
+
+pip install pyreadline ---->  pypi --> fetched the given package -== >Lib-site-packes
+
+builtin function ---> Are the functions which are inherently available in python 
+print()
+int()
+list()
+sorted()
+tuple()
+sum()
+len()
+min()
+max()
+open()
+
+print()
+
+a = range(1, 100) 
+
+for  x in a: 
+    print(x)
+
+
+a = [1,3,3,5,5,6,6,66,7,77,7]
+for each in a: 
+     print(each) 
+
+
+def  function_Name():
+    body1
+    body2
+    body3 
+
+
+function_Name()
+
+
+1. read file and store the file in a variable 
+2. check if the file as morelines and read it line by line 
+3. if the lines have data parse the data 
+4. extract the meaning full data out of (Strip, split, filter, append) 
+5. finally store the required data where you want and the finally 
+6. print statistics of the data 
+7. exit 
+
+
+
+how does python define a function 
+
+def func_name(param, param...n): 
+      funcbodyline1
+      funcbodyline..n
+      return 100;
+
+
+a) Can function return values (Yes) 
+     def add(a, b):
+           return a + b;
+
+b) Can function have name args (yes) 
+         def add (a, b) : 
+              return a + b; 
+        add (a = 10 , b=20) // note position can be swapped 
+c) Can function have positional args (yes) 
+	add(1, 2) 
+d) can function have args with def value (yes) 
+           def add(a=10, b=20): 
+                   print(a+b)  
+
+         add() // now this will use default values 
+        add(b=200) ; this override the values 
+
+e) can function have varargs (yes) 
+	add(*a): 
+ 	     sum(a)
+f)  can function have named varargs (yes) 
+	add(a,b,c)
+	add(b=10, c=20, a =10)
+g) can function  return other function (yes) 	
+	// everything is a variable 
+	// everything is a variable 
+	// everything is a variable 
+	a = 10 
+	a = 20 
+	a function is also a varibale 	
+
+h) can function accpet a function as parameter (yes) 
+
+g) can a function be renamed (yes) 
+
+h) can a function  be  patched (yes) 
+
+
+
+
+file  = open('filename' , mode='r' , encoding = 'utf-8') 
+line = file.readline() // reads the firstline Really need to ignore as the header 
+while(line): 
+      print(line)
+      line = file.readline("\"" , "")
+
+
+      
+
+Step 1 : write a py file 
+Step 2 : install the pylinter 
+	pip install pylint 
+
+Step 3  : pylint <your file> 
+Step 4 : check your score how bad you have writttent the code 
+Step 5 : Correct The code make 10/10 possibly 
+
+
+
+
+
+"""
+ Airports Application Function Story Board
+"""
+
+import sys
+
+SMALL_AIRPORTS = []
+LARGE_AIRPORTS = []
+MEDIUM_AIRPORTS = []
+HELIPORTS = []
+CLOSED_AIRPORTS = []
+SEAPLANE_BASES = []
+BALLOON_PORTS = []
+TOTAL_AIRPORTS = []
+TYPES_OF_AIRPORTS = set()
+LINECOUNT = 0
+
+def read_file(file_name=None):
+    """
+    reads the file
+    """
+    if file_name:
+        file = open(file_name, encoding='UTF-8')
+        parse_file(file)
+        file.close()
+        print_summary()
+
+
+def parse_file(file):
+    """
+    Parses the Records and splits by ',' and finds the right type of airsports
+    """
+    global LINECOUNT
+    line = file.readline()
+    while line:
+        if LINECOUNT == 0:
+            line = file.readline()
+            LINECOUNT += LINECOUNT + 1
+            continue
+        line = line.replace("\"", "")
+        data = line.split(",")
+        if data[2] == 'small_airport':
+            SMALL_AIRPORTS.append(data[3])
+        elif data[2] == 'large_airport':
+            LARGE_AIRPORTS.append(data[3])
+        elif data[2] == 'medium_airport':
+            MEDIUM_AIRPORTS.append(data[3])
+        elif data[2] == 'heliport':
+            HELIPORTS.append(data[3])
+        elif data[2] == 'closed':
+            CLOSED_AIRPORTS.append(data[3])
+        elif data[2] == 'seaplane_base':
+            SEAPLANE_BASES.append(data[3])
+        elif data[2] == 'balloonport':
+            BALLOON_PORTS.append(data[3])
+        line = file.readline()
+        TYPES_OF_AIRPORTS.add(data[2])
+        TOTAL_AIRPORTS.append(data)
+
+    print("hello")
+
+
+def print_summary():
+    """
+    print the summary of all the airports
+    """
+    print(TYPES_OF_AIRPORTS)
+    print("Total Number of Small Airports " + str(len(SMALL_AIRPORTS)))
+    print("Total Number of Large Airports " + str(len(LARGE_AIRPORTS)))
+    print("Total Number of Medium Airports " + str(len(MEDIUM_AIRPORTS)))
+    print("Total Number of Heliports " + str(len(HELIPORTS)))
+    print("Total Number of Closed Airports " + str(len(CLOSED_AIRPORTS)))
+    print("Total Number of Seaplane Base " + str(len(SEAPLANE_BASES)))
+    print("Total Number of Baloon Ports " + str(len(BALLOON_PORTS)))
+    print("Total From Parsed Data ")
+    print(len(SMALL_AIRPORTS) + len(LARGE_AIRPORTS) + len(MEDIUM_AIRPORTS) +
+          len(HELIPORTS) + len(CLOSED_AIRPORTS) + len(SEAPLANE_BASES) + len(BALLOON_PORTS))
+    print("Total Airports " + str(len(TOTAL_AIRPORTS)))
+
+
+read_file(sys.argv[1])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
