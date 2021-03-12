@@ -78,3 +78,111 @@ def demo_date():
 
 demo_date()
 
+
+
+
+
+
+
+
+
+
+def pickle_demo():
+    import pickle
+
+    userconfig = {'username': 'nilesh',
+                  'password': 'nilesh',
+                  "theme": 'blue_aqua',
+                  "refresh_interval": 30,
+                  "pagination": 10,
+                  'maxrecords': 50
+                  }
+    serfile = open('d:/state.ser', 'wb')
+    pickle.dump(userconfig, file=serfile)
+    serfile.close()
+
+
+def load_config():
+    import pickle
+    file = open('d:\\state.ser', 'rb')
+    config = pickle.load(file)
+    print(config['username'])
+
+
+def demo_date():
+    import pytz
+    from datetime import datetime
+    from dateutil.tz import tzlocal
+    timezone = pytz.timezone("Asia/Kolkata")
+    today = datetime.now(tz=timezone)
+    today.replace(tzinfo=tzlocal())
+    print(today)
+    print(today.year)
+    print(today.date)
+    print(today.day)
+    print(today.month)
+    print(today.hour)
+    print(today.minute)
+    print(today.second)
+    print(today.microsecond)
+    tommrow = datetime(2021, 4, 19)
+    print(tommrow)
+    print(today.strftime("%c"))
+    print(today.strftime("%d-%B-%y %H:%M:%S %z"))
+
+
+def regex_demo():
+    import re
+    # substitutes a value by another one based on th reg ex matchpattern
+    print(re.sub)
+    # tries to find if the given patter exactly matches
+    print(re.match)
+    # finds occurences in the   string
+    print(re.findall)
+    # find pattterns in the string
+    print(re.search)
+
+    result = re.match("^[A-Z]+$", "INDIA")
+    if result:
+        print("Yes you are caps")
+    else:
+        print("Check ")
+
+    result2 = re.findall(
+        "[@]", "nilesh.devdas@vinsys.com , nilesh.devdas@gmail.com , nilesh.devdas.ext@siemens.com")
+
+    for i in result2:
+        print(i)
+
+
+def os_demo():
+    import os
+    cwd = os.getcwd()
+    print(cwd)
+    os.chdir("../")
+    print(os.getcwd())
+
+    fileslist = os.listdir("c:/windows")
+    print(fileslist)
+    print(dir(os))
+
+
+def sys_demo():
+    import sys
+    a = 10
+    print(sys.getrefcount(a))
+    print(sys.argv)
+    print(sys.copyright)
+
+
+def math_demo():
+    import math
+    print(dir(math))
+
+
+def SMTP_demo():
+    from smtplib import SMTP
+    SMTP.connect('mail.vinsys.com', 587)
+    SMTP.send()
+
+
