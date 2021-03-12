@@ -1,0 +1,80 @@
+1.  install few package that you are going to install 
+	a) you will be installing a package of type 
+		 bs4  (is the beautiful soup that will allow you to   search html  or xml elements in the given page) 
+		 lxml  (Is the parser) 
+		 requests  (Http Request connect fetch remote data)
+
+
+Summary of day 4 : 
+
+basic python 
+variables 
+builtins
+functions 
+datatypes 
+packages 
+modules 
+editor 
+debug 
+
+built in packages :- 
+re 
+datetime 
+sys 
+os 
+pickle 
+
+
+
+
+def pickle_demo():
+    import pickle
+
+    userconfig = {'username': 'nilesh',
+                  'password': 'nilesh',
+                  "theme": 'blue_aqua',
+                  "refresh_interval": 30,
+                  "pagination": 10,
+                  'maxrecords': 50
+                  }
+    serfile = open('d:/state.ser', 'wb')
+    pickle.dump(userconfig, file=serfile)
+    serfile.close()
+
+
+pickle_demo()
+
+def load_config():
+    import pickle
+    file = open('d:\\state.ser', 'rb')
+    config = pickle.load(file)
+    print(config['username'])
+
+
+load_config()
+
+
+def demo_date():
+    import pytz
+    from datetime import datetime
+    from dateutil.tz import tzlocal
+    timezone = pytz.timezone("Asia/Kolkata")
+    today = datetime.now(tz=timezone)
+    today.replace(tzinfo=tzlocal())
+    print(today)
+    print(today.year)
+    print(today.date)
+    print(today.day)
+    print(today.month)
+    print(today.hour)
+    print(today.minute)
+    print(today.second)
+    print(today.microsecond)
+    tommrow = datetime(2021, 4, 19)
+    print(tommrow)
+    print(today.strftime("%c"))
+    print(today.strftime("%d-%B-%y %H:%M:%S %z"))
+
+
+demo_date()
+
