@@ -1,0 +1,83 @@
+TDD 
+	Test Driven Development 
+	1.  Coverage 
+		Mines : Code Mines : 
+		a code whihc is not tested is quliefier for mine 
+		When code test it has it coverage report a 100% test code 
+		always qualifies to be safer than the non tested code 
+	2.  Completion 
+		The person can exhibit a closure on complete if test case passes 
+		the person a job 
+	3.  Robustness 
+		the same function gets tested tested test and plust it robust because 
+		the impact anlysis is now automated change in any location of code if 
+		affects can be detected in a faster route 
+	4.  Understanding 
+		If a person first writes a test case obviously he understood what the customer 
+		wants and writes test case on the given understanding which verified one 
+		and hence his code follows the user function pattern 
+		rather than he write code first and writes test cases on whatever wrong 
+		code he has written 
+	5.  Facts and Figures (Data Points)  (Reports 
+		a) how time the build took to run all test case 1.1 
+		b) how much time the build took to run 1.6 ---> 
+		c) how many functions were introduced as test cases introduced 
+			complexty % increase decrease 
+		d)  how many uncovered lines 
+		e) how many covered lines 
+		f) how much time each method takes 
+		g) failed , warned or any status 
+		h)  no lines of code 
+		i)   no of test cases 
+		j)  visual coverage and graph (More ENahncers) 
+	6.  Quatlity Guards 
+		sonarqube 
+		other coder  verifications tools that given suggestionf for leaks, security , 
+		mishaps and others  in one go this possible only if you have good tools and 
+		goo quality profile 
+
+
+
+1.  i have to install  a package of type pytest 
+
+	pip install pytest 
+	pip install pytest-html 
+	pip install pytest-cov 
+
+
+2. how to write my python test case :- 
+	actual value ---> by the code 
+	expected value ---> by desire of function 
+	then the actual value == expected value 
+
+	www.google.com 
+	  search button 
+	search field 
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
