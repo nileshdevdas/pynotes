@@ -1,0 +1,123 @@
+Virtual Environment : 
+
+1.  What is virtualenv 
+    i am creating a python construct for myself 
+	a) All the libraries that get installed are getting installed for me (Libs) 
+	b) I can activate this environment and then pip install it does not install in the base 
+		python(globla) but only gets installed in my project 
+	c) What is the advantage 
+		i) i wanted used request 1.0  however my other project cannot work wity 
+			request 1.0 as they requests 2.3 and how will we be able to 
+			manage this out 
+		ii) i want different version of library for different projects 
+
+
+2.  If a project person uses 10 libraries how his co-developers will come to know which 
+	libaries are used in the project --> 
+	we dont commit libraries to the project 
+	we dont commit libraries to the scm 
+	who rescues you here   (pip freeze --> requirements.txt ) 
+	package.json composer or pom.xml config ---> 
+
+
+3.  The Application dependencies are registered in the package.json and then then requirements.txt
+	eventually   can be read 
+
+
+
+
+
+
+There are 2 ways to create a virtual env 
+a)  python -m venv  myapp1 
+b)  pip install virtualenv 
+	virtualenv  <yourproject> 
+
+
+if you dont activate you venv then still it points to root 
+How do i activate my Venv 
+
+1.  pip install virtualenv 
+2.  virtualenv  <yourproject> 
+3.  cd  <yourproject>
+4.  cd Scripts 
+5.  activate.bat/.sh 
+6.  cd ... 
+7.  run pip freeze # and check 
+8.  pip install requests 
+9.  run pip freeze  # and chec
+
+
+What happens if one person check in this code in the scm (Github) 
+someelse wishes to install all the libraries  
+
+
+From a project a---> a person does a commit --> push and there are mulitple people who are working 
+on the project ---> then they would have ---> pull /clone ---> 
+this means that i would need the activity --> to be completed ---> in the pull 
+
+a)   First   virtualenv --> <projdir> 
+b)        cd virtualenv\scripts\Activate 
+c)       cd .. 
+d)       pip install -r requirements.txt 
+
+
+
+Lambda : Shorthands : Anonymous functions ---> callback 
+
+a = lambda x , y :  x + y 
+
+def a(x, y) : 
+     return x + y 
+
+
+
+python with bigdata datasiences
+python flask , djano , tkinter UI
+python selneium  
+python cloud 
+
+MS 98-381
+
+	
+
+ https://testmate.vinsys.com:443/exam/smpy1603
+
+https://feedbackind.vinsys.com/Indiafeedback.html?batch_id%3D595
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
