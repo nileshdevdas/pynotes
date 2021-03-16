@@ -79,11 +79,18 @@ python cloud
 
 MS 98-381
 
-	
-
- https://testmate.vinsys.com:443/exam/smpy1603
+https://testmate.vinsys.com:443/exam/smpy1603 
+(Exam 5.30) 
 
 https://feedbackind.vinsys.com/Indiafeedback.html?batch_id%3D595
+
+Where can you get connected 
+nilesh.devdas.ext@siemens.com 
+Teams :-
+nilesh.devdas@vinsys.com 
+
+
+
 
 
 
